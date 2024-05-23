@@ -1,35 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body{
-  height: 100vh;
-  background-color: #f2f2f2;
-  font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: #dddddd;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  color: #252525;
 }
 
-.img{
-  width: 5rem;
-  height: 100%;
-}
 .navbar{
   background-color: #333;
   color: #fff;
   height: 60px;
   width: 100%;
-  margin-bottom: 10px;
+  
 }
-.navbar .container{
-  max-width: 1500px;
+.container{
+  max-width: 800px;
  margin: 0px auto;
  height: 100%;
+ width: 90%;
+ text-align: center;
+ overflow: hidden;
+ 
+}
+.navbar .container{
+ margin: 0px auto;
+ display: flex;
+ flex: 1;
+ flex-wrap: wrap;
 }
 .navbar .container .list{
+  justify-content: space-around;
+  width: 100%;
   list-style: none;
   display: flex;
   height: 100%;
+  overflow: hidden;
+  padding: 0px;
 }
 .navbar .container .list li{
 
@@ -37,12 +51,119 @@ body{
   padding: 20px 10px;
   overflow: hidden;
 }
+.navbar .container .list li:first-child{
+padding-left: 0;
+margin-left: 0;
+}
+
+.navbar .container .list li:last-child{
+  padding-right: 0;
+  margin-right: 0;
+  }
+
+
 .navbar .container .list li a{
+  text-decoration: none;
+  color: #d0d0d0;
+}
+
+.navbar .container .list li a i{
   text-decoration: none;
   color: #b1b0b0;
   height: 100%;
 }
-
 .navbar .container .list li a:hover{
   color: #fff;
+}
+
+.navbar .container .list li a i:hover{
+  color: #fff;
+}
+
+.main .container{
+background-color: #fff;
+padding: 25px 30px;
+border-radius: 5px;
+box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+overflow: hidden;
+margin: 30px auto;
+}
+
+.main .container .content{
+  padding: 20px 10px;
+  margin: 30px 0px;
+}
+.main .container .content p a{
+  text-decoration: none;
+  color: #007bff;
+}
+
+.main .container .content p a:hover{
+ text-decoration: underline;
+
+}
+
+.main .container .content h1{
+  font-size: 2rem;
+  padding-bottom: 20px;
+
+}
+.main .container .jobs .cards{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:start ;
+  padding: 20px 10px;
+  
+  
+}
+.main .container .jobs .cards .card{
+text-align: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+  max-width: 100%;
+}
+
+.main .container .jobs .cards .card.small{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+.main .container .jobs .cards .card.small .first{
+  color: #838383;
+  
+}
+
+.main .container .jobs .cards .card.small .second{
+  color: #b1b0b0;
+}
+.main .container .jobs .cards .card .steve{
+  margin-bottom: 5px;
+}
+.main .container .jobs .cards .card .tribute{
+padding-bottom: 10px;
+}
+.main .container .jobs .cards .card .name{
+padding-bottom: 10px;
+color: #8f8f8f;
+}
+.main .container .jobs .foot{
+
+}
+.main .container .jobs  .foot .last{
+  padding: 20px 10px;
+
+  font-weight: bold;
+  margin:0px auto;
+  text-align: center;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 55%;
+}
+.main .container .jobs  .foot .last h1{
+  font-size: 2rem;
+  padding: 20px 0px;
+  text-align: center;
 }
